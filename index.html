@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="css/styles.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cinema</title>
 </head>
@@ -12,47 +12,71 @@
     <div class="layout">
         <!-- cabecera -->
         <header class="header">
+            <div class="logo">
+                <div class="play"></div>
+            </div>
+            <h1 class="title">Mis Pelis</h1>
         </header>
 
         <!-- barra de navegación -->
         <nav class="nav">
             <ul>
-                <li>Inicio</li>
-                <li>Peliculas</li>
-                <li>Blog</li>
-                <li>Contacto</li>
+                <li><a href="">Inicio</a></li>
+                <li><a href="">Peliculas</a></li>
+                <li><a href="">Blog</a></li>
+                <li><a href="">Contacto</a></li>
             </ul>
         </nav>
 
 
         <!-- aqui iran las Peliculas -->
-        <main class="content">
-
-            <section>
+        <main class="main">
+            <section class="content">
                 <article class="peli-items">
                     <h3 class="title">Desarrollo web</h3>
                     <p class="Descripción">Coloca tu link a linkedin aquí</p>
+                    <button class="edit">Editar</button>
+                    <button class="delete">Borrar</button>
+                </article>
+                <article class="peli-items">
+                    <h3 class="title">Desarrollo web</h3>
+                    <p class="Descripción">Coloca tu link a linkedin aquí</p>
+                    <button class="edit">Editar</button>
+                    <button class="delete">Borrar</button>
+                </article>
+                <article class="peli-items">
+                    <h3 class="title">Desarrollo web</h3>
+                    <p class="Descripción">Coloca tu link a linkedin aquí</p>
+                    <button class="edit">Editar</button>
+                    <button class="delete">Borrar</button>
+                </article>
+                <article class="peli-items">
+                    <h3 class="title">Desarrollo web</h3>
+                    <p class="Descripción">Coloca tu link a linkedin aquí</p>
+                    <button class="edit">Editar</button>
+                    <button class="delete">Borrar</button>
                 </article>
             </section>
 
-            <section class="search">
-                <h3 class="title">Buscador</h3>
-                <form action="">
-                    <input type="text">
-                    <button>Buscar</button>
-                </form>
-            </section>
-
-            <section class="add">
-                <h3 class="title">Añadir pelicula</h3>
-                <form action="">
-                    <input type="text" placeholder="Añade una pelicula">
-                    <textarea placeholder="Descripción"></textarea>
-                    <input type="submit">
-                </form>
-            </section>
+            <aside class="lateral">
+                <article class="search">
+                    <h3 class="title">Buscador</h3>
+                    <form action="">
+                        <input type="text">
+                        <button>Buscar</button>
+                    </form>
+                </article>
+                <article class="add">
+                    <h3 class="title">Añadir pelicula</h3>
+                    <form action="">
+                        <input type="text" placeholder="Añade una pelicula">
+                        <textarea placeholder="Descripción"></textarea>
+                        <input type="submit">
+                    </form>
+                </article>
+            </aside>
         </main>
-        <footer>
+        <footer class="footer">
             &copy; Master en JavaScript ES12 y TypeScript
         </footer>
     </div>

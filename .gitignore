@@ -1,0 +1,8 @@
+.vscode/
+node_modules/
+dist/
+*.tsbuildinfo
+logs/
+*.log
+tmp/
+temp/

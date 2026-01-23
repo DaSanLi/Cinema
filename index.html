@@ -31,25 +31,7 @@
 
         <!-- aqui iran las Peliculas -->
         <main class="main">
-            <section class="content">
-                <article class="peli-items">
-                    <h3 class="title">Desarrollo web</h3>
-                    <p class="Descripción">Coloca tu link a linkedin aquí</p>
-                    <button class="edit">Editar</button>
-                    <button class="delete">Borrar</button>
-                </article>
-                <article class="peli-items">
-                    <h3 class="title">Desarrollo web</h3>
-                    <p class="Descripción">Coloca tu link a linkedin aquí</p>
-                    <button class="edit">Editar</button>
-                    <button class="delete">Borrar</button>
-                </article>
-                <article class="peli-items">
-                    <h3 class="title">Desarrollo web</h3>
-                    <p class="Descripción">Coloca tu link a linkedin aquí</p>
-                    <button class="edit">Editar</button>
-                    <button class="delete">Borrar</button>
-                </article>
+            <section id="content" class="content">
                 <article class="peli-items">
                     <h3 class="title">Desarrollo web</h3>
                     <p class="Descripción">Coloca tu link a linkedin aquí</p>
@@ -68,10 +50,10 @@
                 </article>
                 <article class="add">
                     <h3 class="title">Añadir pelicula</h3>
-                    <form action="">
-                        <input type="text" placeholder="Añade una pelicula">
-                        <textarea placeholder="Descripción"></textarea>
-                        <input type="submit">
+                    <form>
+                        <input type="text" id="title" placeholder="Añade una pelicula">
+                        <textarea id="descripcion" placeholder="Descripción"></textarea>
+                        <button id="save" type="submit">Guardar</button>
                     </form>
                 </article>
             </aside>
@@ -81,7 +63,5 @@
         </footer>
     </div>
 </body>
-
-<script type="module" src="./dist/main.js"></script>
-
+<script type="module" src="./dist/main.js" ></script>
 </html>

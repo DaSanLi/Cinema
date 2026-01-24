@@ -1,5 +1,6 @@
-import type { pelicula } from "./types.js";
+import type { movie } from "./types.js";
 import { Storage } from "./storage.js";
+import { deleteMovie } from "./delete.js";
 
 export class List {
     content: HTMLElement;
@@ -14,35 +15,29 @@ export class List {
         this.storage = new Storage()
     }
 
-    createTemplatePelicula(movie:pelicula){
+    createTemplatePelicula(movie:movie){
         return `
-            <article class="peli-items" id="pelicula-${movie.id}">
+            <article class="peli-items" id="movie-${movie.id}">
                 <h3 class="title">${movie.title}</h3>
-                <p class="Descripción">${movie.description}</p>
+                <p class="description">${movie.description}</p>
                 <button class="edit" id="edit-${movie.id}">Editar</button>
                 <button class="delete" id="delete-${movie.id}">Borrar</button>
             </article>
         `
     }
 
-    addToList(movie:pelicula){
-        //creo el nuevo objeto con html y variables dinamicas
-        const newMovie = this.createTemplatePelicula(movie);
-
-        //lo agrego al dom
-        this.content.innerHTML += newMovie;
-
-        //muestro las películas
-        this.showMovies()
-    }
-    
     showMovies(){
         this.content.innerHTML = "";
-        const movies: pelicula[] = this.storage.getData() ?? []
+        const movies: movie[] = this.storage.getData() ?? []
         //se recorren todos las peliculas guardadas en el localStorage
         movies.forEach((movie)=>{
             this.content.innerHTML +=  this.createTemplatePelicula(movie)
         })
+
+        //eliminar peliculas
+        deleteMovie()
+
+        //eliminar peliculas
     }
 
 }

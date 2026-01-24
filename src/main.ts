@@ -1,5 +1,5 @@
-import { App } from "./peli/app.js";
+import { App } from "./Movie/app.js";
 
-const peli = new App();
+const Movies = new App();
 
-peli.load();
+Movies.load();

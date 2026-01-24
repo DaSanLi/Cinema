@@ -1,4 +1,4 @@
-import { App } from "./peli/app.js";
-const peli = new App();
-peli.load();
+import { App } from "./Movie/app.js";
+const Movies = new App();
+Movies.load();
 //# sourceMappingURL=main.js.map

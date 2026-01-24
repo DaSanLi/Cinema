@@ -1,7 +1,7 @@
-interface pelicula {
+interface movie {
     id: number;
     title: string;
     description: string;
 }
 
-export type {pelicula}
+export type {movie}

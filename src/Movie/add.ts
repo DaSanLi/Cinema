@@ -1,4 +1,4 @@
-import type { pelicula } from "./types.js";
+import type { movie } from "./types.js";
 import { Storage } from "./storage.js";
 import { List } from "./list.js";
 
@@ -34,17 +34,17 @@ export class Add {
                 alert("Debes rellenar todos los campos si deseas agregar una película")
             }else{
                 //crear objeto a guardar 
-                const peli: pelicula = {
+                const MovieToSave: movie = {
                     id: this.storage.getLastId() ?? 1,
                     title,
                     description
                 }
 
                 //guardar en el localStorage
-                this.storage.saveData(peli)
+                this.storage.saveData(MovieToSave)
 
                 //actualizar el listado
-                this.list.addToList(peli)
+                this.list.showMovies()
             }
         }
     }

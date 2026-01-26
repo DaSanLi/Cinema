@@ -1,6 +1,7 @@
 import type { movie } from "./types.js";
 import { Storage } from "./storage.js";
 import { deleteMovie } from "./delete.js";
+import editMovies from "./edit.js";
 
 export class List {
     content: HTMLElement;
@@ -37,7 +38,8 @@ export class List {
         //eliminar peliculas
         deleteMovie()
 
-        //eliminar peliculas
+        //actualizar peliculas
+        editMovies()
     }
 
 }

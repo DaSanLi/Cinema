@@ -17,7 +17,7 @@
             </div>
             <h1 class="title">Mis Pelis</h1>
         </header>
-
+        
         <!-- barra de navegación -->
         <nav class="nav">
             <ul>
@@ -27,8 +27,8 @@
                 <li><a href="">Contacto</a></li>
             </ul>
         </nav>
-
-
+        
+        
         <!-- aqui iran las Peliculas -->
         <main class="main">
             <section id="content" class="content">
@@ -39,13 +39,13 @@
                     <button class="delete">Borrar</button>
                 </article>
             </section>
-
+            
             <aside class="lateral">
                 <article class="search">
                     <h3 class="title">Buscador</h3>
-                    <form action="">
-                        <input type="text">
-                        <button>Buscar</button>
+                    <form>
+                        <input id="input_search" type="text">
+                        <button id="btn_search">Buscar</button>
                     </form>
                 </article>
                 <article class="add">
@@ -62,6 +62,6 @@
             &copy; Master en JavaScript ES12 y TypeScript
         </footer>
     </div>
+    <script type="module" src="./dist/main.js" ></script>
 </body>
-<script type="module" src="./dist/main.js" ></script>
 </html>

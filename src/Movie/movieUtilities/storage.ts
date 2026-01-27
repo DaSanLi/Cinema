@@ -1,4 +1,4 @@
-import type { movie } from "./types.js";
+import type { movie } from "../types/types.js";
 
 export class Storage{
     Movies: string;

@@ -1,6 +1,6 @@
 import { List } from "./list.js"
 import { Storage } from "./storage.js";
-import type { movie } from "./types.js";
+import type { movie } from "../types/types.js";
 
 export function deleteMovie(){
 

@@ -1,6 +1,6 @@
-import type { movie } from "./types.js";
 import { Storage } from "./storage.js";
 import { List } from "./list.js";
+import type { movie } from "../types/types.js";
 
 
 export class Add {

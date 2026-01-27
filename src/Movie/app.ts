@@ -1,5 +1,6 @@
-import { Add } from "./add.js";
-import { List } from "./list.js";
+import { Add } from "./movieUtilities/add.js";
+import { List } from "./movieUtilities/list.js";
+import search from "./movieUtilities/search.js";
 
 export class App{
     add: Add;
@@ -18,7 +19,7 @@ export class App{
         
         
         //buscar peli
-        
+        search()
         
         //listar pelis
         this.list.showMovies()
